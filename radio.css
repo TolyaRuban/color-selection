@@ -1,0 +1,60 @@
+.form-row {
+	margin: auto;
+	display: inline-block;
+}
+.form-row-title {
+	margin-top: 30px;
+	display: block;
+}
+.radio {
+	display: none;
+}
+/*.checkbox-custom,*/
+.radio-custom {
+	width: 20px;
+	height: 20px;
+	/*border: 2px solid red;*/
+	/*border-radius: 3px;*/
+	position: relative;
+}
+.radio-custom__white {
+	background-color: #ffffff;
+}
+.radio-custom__light-pink {
+	background-color: #f7b496;
+}
+.radio-custom__pink {
+	background-color: #ed366e;
+}
+.radio-custom__red {
+	background-color: #ff0000;
+}
+.radio-custom__blue {
+	background-color: #12129d;
+}
+
+/*.checkbox:checked + .checkbox-custom::before,*/
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	bottom: -2px;
+	left: -2px;
+/*	background: #413548;*/
+	border: 2px solid #ff3469;
+
+	/*border-radius: 2px;*/
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+	/*border-radius: 50%;*/
+
+}
+/*.checkbox-custom,*/
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
